@@ -45,7 +45,7 @@ let count = 6
 
 for (let i = 0; i < count; i++) {
   const texture = textureLoader.load(images[i])
-  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.colorSpace = THREE.SRGBColorSpace
   const baseNode = new THREE.Object3D()
   baseNode.rotation.y = i * ((2 * Math.PI) / 6)
   rootNode.add(baseNode)
