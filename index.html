@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My first three.js app</title>
+    <title>3D Art Gallery</title>
     <style>
       body {
         margin: 0;
+        overflow: hidden; /* prevent scrollbars */
+        background: #000; /* gallery background */
+      }
+      canvas {
+        display: block; /* removes small gaps */
       }
     </style>
   </head>
   <body>
+    <!-- Three.js will render into a canvas here -->
+
+    <!-- ✅ If using Vite (npm run dev), keep this: -->
     <script type="module" src="/main.js"></script>
+
+    <!-- ❌ If opening index.html directly (no server), change to this: -->
+    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
