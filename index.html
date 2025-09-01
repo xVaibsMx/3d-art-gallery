@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Art Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden; /* No scrollbars */
+        font-family: Arial, sans-serif;
+        background-color: #000; /* Dark gallery vibe */
+        color: white;
+      }
+
+      canvas {
+        display: block; /* Remove gaps around WebGL canvas */
+      }
+
+      #loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        color: #ccc;
+      }
+
+      #info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading message -->
+    <div id="loading">Loading Gallery...</div>
+
+    <!-- Optional info overlay -->
+    <div id="info">Click artworks to view details</div>
+
+    <!-- Main script -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
